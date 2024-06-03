@@ -3,7 +3,7 @@
 @section('content')
 
     {{-- Content Post --}}
-    <div class="d-flex flex-column gap-2">
+    <div class="d-flex flex-column-reverse gap-2">
         @foreach ($posts as $post)
             <div class="card p-4 bg-black text-white" style="width: 400px; border:1px solid white;">
                 <div class="d-flex justify-content-between mb-2">
