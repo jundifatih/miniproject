@@ -115,6 +115,7 @@
                 @yield('content')
                 
             </div>
+            <p class="text-dark text-center mt-5" style="font-size: 12px">Copyright 2024</p>
         </div>
     </div>
 

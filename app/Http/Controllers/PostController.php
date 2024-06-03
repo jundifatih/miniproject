@@ -38,11 +38,15 @@ class PostController extends Controller
 
 
         if ($posts) {
-            return redirect()->route('home')
-                ->with('success', 'User created successfully');
+            return redirect()->route('home')->with('success', 'post created successfully');
         } else {
-            return redirect()->route('form_post')
-                ->with('error', 'Failed to create user');
+            return redirect()->route('form_post')->with('error', 'Failed to create Post');
         }
     }
+
+    public function seePost(){
+        $posts = Post::find(Auth::user()->id);
+        return view('seepost.index', compact('posts'));
+    }
+
 }

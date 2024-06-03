@@ -31,4 +31,5 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 Route::get('/MyProfile', [UserController::class, 'myProfile'])->name('my_profile');
 Route::get('/formPost', [PostController::class, 'formPost'])->name('form_post');
 Route::post('/formAdd', [PostController::class, 'formAdd'])->name('form_add');
+Route::get('/seePost', [PostController::class, 'seePost'])->name('see_post');
 

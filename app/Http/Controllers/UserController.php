@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Post;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -95,9 +96,9 @@ class UserController extends Controller
         return view('dashboard.index', compact('user'));
     }
 
-    public function myProfile(){
+    public function myProfile(Post $post){
         $user = Auth::user();
-        return view('myprofile.index', compact('user'));
+        return view('myprofile.index', compact('user', 'post'));
     }
     public function logout()
     {
