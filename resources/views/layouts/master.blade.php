@@ -37,7 +37,7 @@
             background-color: rgb(143, 202, 202);
         }
     </style>
-<body>
+<body class="bg-black">
     
     <div class="d-flex">
 

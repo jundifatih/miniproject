@@ -10,8 +10,8 @@
                     <div class="d-flex text-white gap-3">
                         <img src="{{('image/default_profile.png')}}" style="border-radius: 50%" alt="profile" width="35" height="35">
                         <div>
-                            <p class="my-0" style="font-size: 12px">Imronrev</p>
-                            <p style="font-size: 8px">1 day ago</p>
+                            <p class="my-0" style="font-size: 12px">{{$post->user->name}}</p>
+                            <p style="font-size: 8px">{{$post->created_at->diffForHumans()}}</p>
                         </div>
                     </div>
                     <a href="">
